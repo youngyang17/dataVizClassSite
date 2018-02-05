@@ -1,0 +1,22 @@
+body {
+  background-color: #ffffff;
+}
+p{
+  color: #000000;
+  font-family: "optima",serif;
+  font-size: 1.35em;
+  font-weight: 300;
+  max-width: 900px;
+  ;
+}
+p.boldText {
+  font-weight: normal;
+  color: #000000;
+  font-family: "optima",serif;
+  font-size: 1.35em;
+  font-weight: 300;
+  max-width: 900px;
+}
+p#italicsText {
+  font-style: italic;
+}
