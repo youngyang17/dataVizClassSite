@@ -1,10 +1,10 @@
-// Setup function
+
 function setup(){
   createCanvas(800,800);
   console.log('Setup complete...')
 }
 
-// Draw function
+
 function draw() {
   background (255);
   strokeWeight(0);
