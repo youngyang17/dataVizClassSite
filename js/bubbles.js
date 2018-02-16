@@ -1,18 +1,20 @@
-function setup(){
-  createCanvas(800,800);
-  console.log('Setup complete...')
+var max_distance;
+
+function setup() {
+  createCanvas(500,800);
+  strokeWeight(1);
+  max_distance = dist(0, 0, width, height);
 }
 
-// Draw function
 function draw() {
-  background (255);
-  strokeWeight(0);
+  background(255);
 
+  for(var i = 0; i <= width; i += 20) {
+    for(var j = 0; j <= height; j += 20) {
+      var size = dist(mouseX, mouseY, i, j);
+      size = size/max_distance * 25;
 
-  for (var x = 0; x <= width; x+= 50) {
-    for (var y = 0; y <= height; y+= 50) {
-      fill (0,0,0);
-      ellipse(x,y,25,25);
+      ellipse(i, j, size, size);
     }
   }
 }
