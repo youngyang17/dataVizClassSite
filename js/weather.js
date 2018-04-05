@@ -41,7 +41,7 @@ function draw(){
 if (weatherData){
     text('The current weather for ' + cityInput.value() + ' is:', 50, 50);
     text(description, 80, 70);
-    text(temperature + ' F', 80, 90);
+    text(temperature-273 + ' c', 80, 90);
 
     if (temperature >= 100) {
       c = color('red');
