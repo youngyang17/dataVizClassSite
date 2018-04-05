@@ -1,5 +1,5 @@
 // **** Global Variables ***** //
-var apiKey = '35875619346eeb8604023170b794b9b6';
+var apiKey = 'c906d2d88fa5580fe0b0f74c6f42fdf2';
 var baseURL = 'http://api.openweathermap.org/data/2.5/weather?q='
 var weatherData;
 var button;
@@ -38,8 +38,7 @@ function getWeatherData(apiData){
 // **** Draw Function **** //
 function draw(){
   background (555);
-
-  if (weatherData){
+if (weatherData){
     text('The current weather for ' + cityInput.value() + ' is:', 50, 50);
     text(description, 80, 70);
     text(temperature + ' F', 80, 90);
