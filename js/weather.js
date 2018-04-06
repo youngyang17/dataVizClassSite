@@ -39,18 +39,22 @@ function getWeatherData(apiData){
 function draw(){
   background (555);
 if (weatherData){
-    text('The current weather for ' + cityInput.value() + ' is:', 50, 50);
+    text('The current weather for ' + cityInput.value() + ' is:', 80, 50);
     text(description, 80, 70);
     text(temperature-273 + ' c', 80, 90);
 
-    if (temperature >= 100) {
+    if (temperature-273 >= 27) {
       c = color('red');
     }
-    else if (temperature > 90) {
+    else if (temperature-273 > 15) {
+       c = color('yellow');
+    }
+    else if (temperature-273 > 10) {
        c = color('green');
     }
-    else if (temperature > 80) {
+    else if (temperature-273 < 9) {
         c = color('blue');}
+
     fill(c); // Use color variable 'c' as fill color
     noStroke(); // Don't draw a stroke around shapes
     rect(80,100, 55, 55);
